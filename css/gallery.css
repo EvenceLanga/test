@@ -1,0 +1,44 @@
+/* Container Styling */
+.container-xxl {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap to the next row */
+    gap: 16px; /* Spacing between gallery items */
+    justify-content: center; /* Centers gallery items */
+}
+
+/* Gallery Item Styles */
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    aspect-ratio: 16 / 9; /* Ensures all items have the same aspect ratio */
+    width: 100%; /* Makes the item responsive */
+    max-width: 300px; /* Optional: Limits the size of the gallery items */
+}
+
+/* Hover Effect */
+.gallery-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Image and Video Styling */
+.gallery-item img,
+.gallery-item video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the content fills the container neatly */
+    border-radius: 10px;
+}
+
+/* Section Heading */
+h3 {
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
